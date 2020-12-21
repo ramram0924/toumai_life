@@ -1,0 +1,302 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+/*要素のフォントサイズやマージン・パディングをリセットしています*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/*行の高さをフォントサイズと同じにしています*/
+body {
+    line-height:1;
+}
+
+/*新規追加要素のデフォルトはすべてインライン要素になっているので、section要素などをブロック要素へ変更しています*/
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+/*nav要素内ulのマーカー（行頭記号）を表示しないようにしています*/
+/*nav ul {
+    list-style:none;
+}*/
+ol, ul {
+    list-style: none;
+}
+
+/*引用符の表示が出ないようにしています*/
+blockquote, q {
+    quotes:none;
+}
+
+/*blockquote要素、q要素の前後にコンテンツを追加しないように指定しています*/
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+/*a要素のフォントサイズなどをリセットしフォントの縦方向の揃え位置を親要素のベースラインに揃えるようにしています*/
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* ins要素のデフォルトをセットし、色を変える場合はここで変更できるようにしています */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* mark要素のデフォルトをセットし、色やフォントスタイルを変える場合はここで変更できるようにしています
+また、mark要素とは、文書内の検索結果で該当するフレーズをハイライトして、目立たせる際に使用するようです。*/
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+/*テキストに打ち消し線が付くようにしています*/
+del {
+    text-decoration: line-through;
+}
+
+/*IEではデフォルトで点線を下線表示する設定ではないので、下線がつくようにしています
+また、マウスオーバー時にヘルプカーソルの表示が出るようにしています*/
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+/*隣接するセルのボーダーを重ねて表示し、間隔を0に指定しています*/
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/*水平罫線のデフォルトである立体的な罫線を見えなくしています*/
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+/*縦方向の揃え位置を中央揃えに指定しています*/
+input, select {
+    vertical-align:middle;
+}
+
+/*画像を縦に並べた時に余白が出ないように*/
+img {
+    vertical-align: top;
+    font-size: 0;
+    line-height: 0;
+}
+
+/*box-sizingを全ブラウザに対応*/
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+a {
+    color: #000;
+    text-decoration: none;   
+    
+}
+.container1{
+    max-width: 1650px;
+    margin: 0 auto;
+    padding: 0 40px;
+    position: relative;
+}
+/* ヘッダー */
+header{
+    width: 100%;
+    top: 0;
+    left: 0px;
+}
+header > .container1{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    max-width: none;
+}
+/* 会社ロゴ */
+.area_logo_header .logo{
+    width: 270px;
+    display: block;   
+    align-items: left;
+}
+.area_logo_header img{
+    height: 55px;
+    vertical-align: bottom; /*画像下の余白を無くす*/
+    
+}
+/* ヘッダーナビ */
+.nav_header{
+    margin: 0 0 0 auto;
+    
+}
+.list_nav_header{
+    display: flex;
+    align-items: center; 
+    margin: 0 -15px;
+}
+.list_nav_header > li{
+    padding: 0  30px;
+}
+/* SNSアイコン ヘッダー */
+.sns_icon_header{
+    display: flex;
+    align-items: right; 
+    margin: 30px; 
+}
+.sns_icon_header > ul{
+    list-style: none;  
+}
+.sns_icon_header > li{
+    padding: 0 5px;
+}
+
+/* トップ画像 */
+.container2{
+    background-color: #F1F1F1;
+    width: 100%;
+   
+}
+.kv_wrap{
+    max-width: 100%;
+    height: 800px;
+    display: flex; 
+}
+.top_view_img{
+    background: url(../img/KV.jpg) no-repeat;
+    width: 100%;
+    height: 500px;
+    background-position: left;
+    background-size: cover;
+    height: 735px;  
+    margin-left: 110px;
+}
+/* メインタイトル */
+.top_view_ttl .ttl_01{ 
+    position: absolute;
+    color: white;
+    font-family: "游明朝";
+    font-weight: 700;
+    font-size: 120px;
+    margin: 450px 60px;
+    
+}
+/* 「誰かに作られた在り方作り方を抜け出そう」 */
+.top_view_sub_ttl{
+    width: 60px;
+    
+}
+.sub_ttl_txt{
+    writing-mode: vertical-rl;
+    font-family: "游明朝";
+    font-weight: 600;
+    font-size: 30px;
+    
+}
+/* サービスメニュー　一覧 */
+.about-us{  
+    background-color: #F1F1F1; 
+    width: 100%;   
+}
+.service-menu_wrap{
+    max-width: 80%;
+    margin: 0 auto;
+    height: 700px;
+    background-color: white;
+    display: flex;
+    position: relative;
+}
+/* ━━━━service */
+.service_menu_top_en p{
+    width: 100px;
+    display: flex;
+    float: right;
+}
+.service_menu_top_en{
+    margin-left: auto; 
+}
+.service_menu_top{
+    width: 160px;
+}
+/* タイトル詳細設定 */
+.menu_ttl{
+    padding-top: 60px;
+    border-bottom: solid 4px #000;
+    padding-bottom: 40px;
+    margin-bottom: 32px; 
+    margin-left: 40px;
+    text-align: -webkit-center;
+}
+/* 法人向けコンサルティング */
+.menu_ttl_01{
+    font-size: 40px;
+    writing-mode: vertical-rl;   
+    text-align: -webkit-left;
+}
+.inner-txt_wrap{
+    width: 150px;
+    height: 250px;
+    padding-bottom: 40px;
+    text-align: -webkit-right;  
+}
+.inner-txt_wrap > .txt_01{
+    writing-mode: vertical-rl; 
+}
+.service_01_wrap{
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.service_01_wrap img{
+    width: 400px;
+    margin: 20px;
+}
